@@ -195,10 +195,18 @@ elif [[ "$secim2" == "3" ]]; then
 echo ""
 read -p "Enter..."
 
-
 elif [[ "$secim2" == "4" ]]; then
 break
 
+else
+
+ clear
+ echo -e "${RED} Please make a different selection. ${NC}"
+ sleep 2
+ continue
+
+fi  
+done  
 
 elif [[ "$secim" == "6" ]]; then
 
@@ -219,7 +227,6 @@ sleep 2
 continue
 
 
-
 else
 
  clear
@@ -229,15 +236,3 @@ else
 
 fi  
 done  
-
-else
-
- clear
- echo -e "${RED} Please make a different selection. ${NC}"
- sleep 2
- continue
-
-fi  
-done  
-
-

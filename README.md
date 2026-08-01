@@ -18,11 +18,12 @@ Get up and running in seconds:
 Bash
 # 1. Clone the repository
 git clone https://github.com/shadowxy144/Ssh-control-.git
-cd Ssh-control-
+
+# 2. cd Ssh-control-
 cd control 
 
-# 2. Grant execution permissions
+# 3. Grant execution permissions
 chmod +x sshstart.sh
 
-# 3. Run the tool (sudo required for service management)
+# 4. Run the tool (sudo required for service management)
 sudo ./sshstart.sh

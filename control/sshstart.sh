@@ -123,6 +123,7 @@ do
 
 clear
 
+echo -e "${GREEN}"
 cat << EOF
  ▄███████▄   ▄███████▄   ▄██   ██▄ 
 ████▀ ▀████ ████▀ ▀████ ████   ████
@@ -131,12 +132,15 @@ cat << EOF
 ████▄ ▄████ ████▄ ▄████ ████   ████
  ▀███████▀   ▀███████▀   ▀██   ██▀ 
 EOF
+echo -e "${NC}"
 
 echo ""
 echo "1) Automatically started SSH server"
 echo "2) Turn off automatic startup"
 echo ""
-echo "3) Menu"
+echo "3) Whatsmy local adress and name"
+echo ""
+echo "4) Menu"
 echo ""
 
 read -p "Choose : " secim2
@@ -170,6 +174,29 @@ echo -e "${GREEN}You are being redirected to the successful menu.${NC}"
  continue
 
 elif [[ "$secim2" == "3" ]]; then
+
+ clear
+
+ echo "Your local ip adress : "
+ hostname -I 
+
+ echo ""
+
+ echo "Your localname : "
+ whoami
+
+ echo ""
+
+ echo "Your puplic ip adress : "
+
+ curl "http://ip-api.com/"
+ 
+
+echo ""
+read -p "Enter..."
+
+
+elif [[ "$secim2" == "4" ]]; then
 break
 
 
